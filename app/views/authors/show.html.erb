@@ -1,6 +1,11 @@
 <h1><%= @author.name %></h1>
-
+<br>
+<br>
+<%= link_to "New Post", new_author_post_path(@author) %>
+<br>
+<br>
 <p>Posts:</p>
+<br>
 <% @author.posts.each do |post| %>
   <div><%= post.title %></div>
 <% end %>
